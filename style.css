@@ -1,0 +1,232 @@
+body {
+    font-family: 'Dancing Script', cursive !important;
+    text-align: center;
+    background-color: #f8d7da;
+}
+
+#bgimg {
+    background-image:url(Loginpage.jpg);
+    background-position: center;
+    background-size:cover;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.Login {
+    padding: 20px;
+    text-align: center;
+    display:-moz-inline-box;
+    background: rgba(255, 255, 255, 0); 
+    border-radius: 20px;
+    margin:450px;
+    margin-top:150px;
+    box-shadow: 0 0 15px #a31a48;
+    padding-bottom: 40px;
+}
+#loginUser{
+                
+    border-radius: 4px;
+    border:none;
+    padding: 10px ;
+    background: rgba(255, 255, 255, 0.7); 
+    border-color: #ff4081;
+    padding-left: 10px;
+    padding-right: 30px;
+    
+}
+#loginUser:hover{
+    transform:scale(1.05);
+}
+#loginPass{
+    
+    border-radius: 4px;
+    border:none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7); 
+    border-color: #ff4081;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+#loginPass:hover{
+    transform:scale(1.05);
+
+}
+#registerUser{
+                
+    border-radius: 4px;
+    border:none;
+    padding: 10px ;
+    background: rgba(255, 255, 255, 0.7); 
+    border-color: #ff4081;
+    padding-left: 10px;
+    padding-right: 30px;
+    
+}
+#registerUser:hover{
+    transform:scale(1.05);
+}
+#registerPass{
+    
+    border-radius: 4px;
+    border:none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7); 
+    border-color: #ff4081;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+#registerPass:hover{
+    transform:scale(1.05);
+
+}
+
+
+button {
+    background: linear-gradient(45deg, #ff4081, #ff79a7);        
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    margin-top:4px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #ff4081;
+    font-weight: bold;
+}
+.body {
+    background-image:url(home_bg.webp);
+    background-size:cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    
+}
+.container {
+
+width: 60vw;  
+height: 100vh;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+}
+
+.imgs{
+    
+    border-width: 20px;
+    border-style:solid ;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    border-color: whitesmoke;
+    border-bottom-width: 70px;
+    position: absolute;
+    user-select: none;
+    cursor:grab;
+    transition: all 0.1s ease-out;
+    
+    
+}
+
+.imgs:hover{
+    transform:scale(1.05);
+}
+#myVideo{
+    border-width: 20px;
+    border-style:solid ;
+    display: inline;
+    border-color: whitesmoke;
+    border-bottom-width: 70px;
+}
+.button{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: left;
+}
+.black{
+    background: linear-gradient(45deg, black,rgb(77, 74, 74));
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    margin-top:4px;
+}
+.black:hover {
+    transform: scale(1.05); 
+}
+
+.black:active {
+    transform: scale(0.8); 
+}
+
+#blackScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+    z-index: 9999;
+}
+
+.envcontainer {
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw; 
+}
+
+.envolope {
+    font-family: 'Dancing Script', cursive;
+    background: #cfcfcf;
+    padding: 25px;
+    width: 30vw;
+    text-align: justify;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: rotate(+5deg); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.envolope::before {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 20px solid #cfcfcf;
+    
+}
